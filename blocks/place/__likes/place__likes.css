@@ -11,12 +11,13 @@
 .place__likes .place__like:last-of-type {
   display: none;
 }
-.place__likes-active .place__like:first-of-type {
-  display: none;
-}
 .place__likes-active .place__like:last-of-type {
   display: flex;
 }
+.place__likes-active .place__like:first-of-type {
+  display: none;
+}
+
 .place__likes .place__like:first-of-type:hover {
   opacity: 0.5;
 }
