@@ -1,0 +1,10 @@
+.place__description {
+  display: flex;
+  justify-content: space-between;
+  margin: 21px 19px 26px 20px;
+}
+@media (max-width: 510px) {
+  .place__description {
+    margin: 21px 19px 26px 19px;
+  }
+}

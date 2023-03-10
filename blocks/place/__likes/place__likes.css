@@ -1,0 +1,22 @@
+.place__likes {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  border: 0;
+  border-radius: 0;
+  outline: 0;
+  background-color: transparent;
+  padding: 0;
+}
+.place__likes .place__like:last-of-type {
+  display: none;
+}
+.place__likes-active .place__like:first-of-type {
+  display: none;
+}
+.place__likes-active .place__like:last-of-type {
+  display: flex;
+}
+.place__likes .place__like:first-of-type:hover {
+  opacity: 0.5;
+}

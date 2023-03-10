@@ -1,0 +1,13 @@
+.popup__border-bottom {
+  max-width: 358px;
+  width: 100%;
+  margin-top: 24px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 510px) {
+  .popup__border-bottom {
+    margin-top: 30px;
+  }
+}
