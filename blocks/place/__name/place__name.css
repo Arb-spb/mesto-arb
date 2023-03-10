@@ -1,4 +1,4 @@
-.place_name {
+.place__name {
   color: #000000;
   font-family: 'Inter', sans-serif;
   font-style: normal;
@@ -9,4 +9,5 @@
   white-space: nowrap;
   overflow: hidden;
   margin: 0;
+  padding: 0;
 }
