@@ -1,7 +1,7 @@
 //Блок управления popup:
 const popupElement = document.querySelector('.popup');
-const popupCloseButtonElement = popupElement.querySelector('.popup__close');
-const popupOpenButtonElement = document.querySelector('.edit-button');
+const popupCloseButtonElement = popupElement.querySelector('.popup_event_close');
+const popupOpenButtonElement = document.querySelector('.profile__edit-button');
 const popupFormElement = document.querySelector('.popup__form');
 const inputName = popupElement.querySelector('#popup__text-name');
 const inputProf = popupElement.querySelector('#popup__text-prof');
@@ -10,7 +10,7 @@ const profileTextElement = document.querySelector('.profile__prof');
 
 //Функция переключения отображения popup
 const toggleVisibilityPopup = function () {
-  popupElement.classList.toggle('popup__is-opened');
+  popupElement.classList.toggle('popup_state_is-opened');
 };
 //Функция передает новые значения из input popup в секцию profile
 const savePopup = function (evt) {
@@ -26,12 +26,3 @@ popupFormElement.addEventListener('submit', savePopup);
 //Завершен блок управления popup!
 
 //Блок управления лайками:
-const placeLikesArr = document.querySelectorAll('.place__likes');
-
-const activeLike = function (likeEvent) {
-  likeEvent.currentTarget.classList.toggle('place__likes-active');
-}
-
-placeLikesArr.forEach(function (like) {
-  like.addEventListener('click', activeLike);
-})

@@ -6,7 +6,9 @@
   line-height: 17px;
   color: #000000;
   border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
   appearance: none;
   outline: none;
-  padding: 0;
+  margin-top: 27px;
+  padding-bottom: 10px;
 }

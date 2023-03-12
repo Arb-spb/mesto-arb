@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Title</title>
+  <title>Mesto - путешествия по России</title>
   <link rel="stylesheet" href="./pages/index.css" type="text/css">
 </head>
 
@@ -22,16 +22,12 @@
         <div class="profile__info">
           <div class="profile__name-button">
             <h1 class="profile__name">Жак-Ив Кусто</h1>
-            <button class="edit-button">
-              <img class="edit-button__img" src="./images/pen.svg" alt="Редактировать">
-            </button>
+            <button class="profile__edit-button" type="button" name="profile_edit-button"></button>
           </div>
           <p class="profile__prof">Исследователь океана</p>
         </div>
       </div>
-      <button class="add-button">
-        <img class="add-button__img" src="./images/plus.svg" alt="Добавить">
-      </button>
+      <button class="profile__add-button" type="button" name="places_add-button"></button>
     </section>
 
     <section class="places">
@@ -39,60 +35,42 @@
         <img class="place__foto" src="./images/gallery-karachaevsk.jpg" alt="Карачаевск">
         <div class="place__description">
           <h2 class="place__name">Карачаевск</h2>
-          <button class="place__likes">
-            <img class="place__like" src="./images/heart-white.svg" alt="Лайк">
-            <img class="place__like" src="./images/heart-black.svg" alt="Лайк">
-          </button>
+          <button class="place__likes place__likes_type_passive" type="button" name="place_like"></button>
         </div>
       </div>
       <div class="place">
         <img class="place__foto" src="./images/gallery-elbrus.jpg" alt="Гора Эльбрус">
         <div class="place__description">
           <h2 class="place__name">Гора Эльбрус</h2>
-          <button class="place__likes">
-            <img class="place__like" src="./images/heart-white.svg" alt="Лайк">
-            <img class="place__like" src="./images/heart-black.svg" alt="Лайк">
-          </button>
+          <button class="place__likes place__likes_type_passive" type="button" name="place_like"></button>
         </div>
       </div>
       <div class="place">
         <img class="place__foto" src="./images/gallery-dombay.jpg" alt="Добмай">
         <div class="place__description">
           <h2 class="place__name">Домбай</h2>
-          <button class="place__likes">
-            <img class="place__like" src="./images/heart-white.svg" alt="Лайк">
-            <img class="place__like" src="./images/heart-black.svg" alt="Лайк">
-          </button>
+          <button class="place__likes place__likes_type_passive" type="button" name="place_like"></button>
         </div>
       </div>
       <div class="place">
         <img class="place__foto" src="./images/gallery-baykal.jpg" alt="Байкал">
         <div class="place__description">
           <h2 class="place__name">Байкал</h2>
-          <button class="place__likes">
-            <img class="place__like" src="./images/heart-white.svg" alt="Лайк">
-            <img class="place__like" src="./images/heart-black.svg" alt="Лайк">
-          </button>
+          <button class="place__likes place__likes_type_passive" type="button" name="place_like"></button>
         </div>
       </div>
       <div class="place">
         <img class="place__foto" src="./images/gallery-kamchatka.jpg" alt="Камчатка">
         <div class="place__description">
           <h2 class="place__name">Камчатка</h2>
-          <button class="place__likes">
-            <img class="place__like" src="./images/heart-white.svg" alt="Лайк">
-            <img class="place__like" src="./images/heart-black.svg" alt="Лайк">
-          </button>
+          <button class="place__likes place__likes_type_passive" type="button" name="place_like"></button>
         </div>
       </div>
       <div class="place">
         <img class="place__foto" src="./images/gallery-manpupuner.jpg" alt="Маньпупунер">
         <div class="place__description">
           <h2 class="place__name">Маньпупунер</h2>
-          <button class="place__likes">
-            <img class="place__like" src="./images/heart-white.svg" alt="Лайк">
-            <img class="place__like" src="./images/heart-black.svg" alt="Лайк">
-          </button>
+          <button class="place__likes place__likes_type_passive" type="button" name="place_like"></button>
         </div>
       </div>
     </section>
@@ -100,23 +78,18 @@
   </main>
 
   <footer class="footer">
-    <p class="copyright">© 2020 Mesto Russia</p>
+    <p class="footer__copyright">© 2020 Mesto Russia</p>
   </footer>
 
   <section class="popup">
     <div class="popup__container">
-      <button class="popup__close">
-        <img class="popup__close-img" src="./images/close.svg" alt="Закрыть">
+      <button class="popup_event_close" type="button" name="popup-close">
       </button>
-      <h2 class="popup__title">Редактировать профиль</h2>
-      <form class="popup__form">
-        <div class="popup__border-bottom">
-          <input class="popup__text" id="popup__text-name" type="text" value="Жак-Ив Кусто">
-        </div>
-        <div class="popup__border-bottom">
-          <input class="popup__text" id="popup__text-prof" type="text" value="Исследователь океана">
-        </div>
-        <input class="popup__save" type="submit" value="Сохранить">
+      <h3 class="popup__title">Редактировать профиль</h3>
+      <form class="popup__form" name="popup_content">
+          <input class="popup__text" id="popup__text-name" type="text" name="popup__text-name" value="Жак-Ив Кусто">
+          <input class="popup__text" id="popup__text-prof" type="text" name="popup__text-prof" value="Исследователь океана">
+        <button class="popup__save" type="submit" name = "popup_save-button" value="Сохранить">Сохранить</button>
       </form>
     </div>
   </section>
