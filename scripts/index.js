@@ -1,6 +1,6 @@
 //Блок управления popup:
 const popupElement = document.querySelector('.popup');
-const popupCloseButtonElement = popupElement.querySelector('.popup_event_close');
+const popupCloseButtonElement = popupElement.querySelector('.popup__event_close');
 const popupOpenButtonElement = document.querySelector('.profile__edit-button');
 const popupFormElement = document.querySelector('.popup__form');
 const inputName = popupElement.querySelector('#popup__text-name');

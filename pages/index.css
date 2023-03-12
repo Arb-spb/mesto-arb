@@ -27,12 +27,11 @@
 @import "../blocks/place/__name/place__name.css";
 
 @import "../blocks/popup/popup.css";
-@import "../blocks/popup/_event/popup_event_close.css";
-@import "../blocks/popup/__close-img/popup__close-img.css";
+@import "../blocks/popup/__event/popup__event_close.css";
+@import "../blocks/popup/__event/popup__event_open.css";
 @import "../blocks/popup/__container/popup__container.css";
 @import "../blocks/popup/__form/popup__form.css";
-@import "../blocks/popup/_state_is-opened/popup_state_is-opened.css";
-@import "../blocks/popup/_event/popup_event_open.css";
+@import "../blocks/popup/_is-opened/popup_is-opened.css";
 @import "../blocks/popup/__save/popup__save.css";
 @import "../blocks/popup/__text/popup__text.css";
 @import "../blocks/popup/__title/popup__title.css";

@@ -1,4 +1,4 @@
-.popup_event_close {
+.popup__event_close {
   appearance: none;
   width: 32px;
   height: 32px;
@@ -17,12 +17,12 @@
   background-position: center;
   transition: opacity 0.2s linear;
 }
-.popup_event_close:hover {
+.popup__event_close:hover {
   opacity: 0.6;
 }
 
 @media (max-width: 510px) {
-  .popup_event_close {
+  .popup__event_close {
     width: 20px;
     height: 20px;
     background-size: 20px;
