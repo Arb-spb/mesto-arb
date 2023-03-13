@@ -8,6 +8,9 @@
   width: 22px;
   height: 19px;
   transition: opacity 0.2s linear;
+  background-image: url("../../../images/heart-white.svg");
+  background-repeat: no-repeat;
+  background-size: 22px 19px;
 }
 .place__likes:hover {
   opacity: 0.5;

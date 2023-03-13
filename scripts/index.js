@@ -1,6 +1,6 @@
 //Блок управления popup:
 const popupElement = document.querySelector('.popup');
-const popupCloseButtonElement = popupElement.querySelector('.popup__event_close');
+const popupCloseButtonElement = popupElement.querySelector('.popup__close');
 const popupOpenButtonElement = document.querySelector('.profile__edit-button');
 const popupFormElement = document.querySelector('.popup__form');
 const inputName = popupElement.querySelector('#popup__text-name');
@@ -10,7 +10,7 @@ const profileTextElement = document.querySelector('.profile__prof');
 
 //Функция переключения отображения popup
 const toggleVisibilityPopup = function () {
-  popupElement.classList.toggle('popup_state_is-opened');
+  popupElement.classList.toggle('popup_is-opened');
 };
 //Функция передает новые значения из input popup в секцию profile
 const savePopup = function (evt) {
